@@ -2,6 +2,7 @@ import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 
 plugins {
     kotlin("jvm") version "1.3.50"
+    id("org.jmailen.kotlinter") version "2.1.1"
 }
 
 repositories {
