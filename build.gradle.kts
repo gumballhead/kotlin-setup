@@ -9,10 +9,10 @@ repositories {
 }
 
 dependencies {
-    compile(kotlin("stdlib-jdk8"))
+    implementation(kotlin("stdlib-jdk8"))
 
-    testCompile("org.assertj:assertj-core:3.13.2")
-    testCompile("org.junit.jupiter:junit-jupiter-api:5.5.1")
+    testImplementation("org.assertj:assertj-core:3.13.2")
+    testCompileOnly("org.junit.jupiter:junit-jupiter-api:5.5.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.5.1")
 }
 
