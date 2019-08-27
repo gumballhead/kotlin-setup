@@ -11,7 +11,7 @@ repositories {
 dependencies {
     compile(kotlin("stdlib-jdk8"))
 
-    testCompile(kotlin("test-junit5"))
+    testCompile("org.hamcrest:hamcrest:2.1")
     testCompile("org.junit.jupiter:junit-jupiter-api:5.5.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.5.1")
 }
