@@ -1,15 +1,14 @@
-import org.hamcrest.MatcherAssert.assertThat
-import org.hamcrest.Matchers.equalTo
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
 class GreetingTest {
     @Test
     fun `greet the world`() {
-        assertThat(greet(), equalTo("Hello, World!"))
+        assertThat(greet()).isEqualTo("Hello, World!")
     }
 
     @Test
     fun `greet by name`() {
-        assertThat(greet("Andrew"), equalTo("Hello, Andrew!"))
+        assertThat(greet("Andrew")).isEqualTo("Hello, Andrew!")
     }
 }

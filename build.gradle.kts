@@ -11,14 +11,14 @@ repositories {
 dependencies {
     compile(kotlin("stdlib-jdk8"))
 
-    testCompile("org.hamcrest:hamcrest:2.1")
+    testCompile("org.assertj:assertj-core:3.13.2")
     testCompile("org.junit.jupiter:junit-jupiter-api:5.5.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.5.1")
 }
 
 tasks {
     compileKotlin {
-        kotlinOptions.jvmTarget = "1.8"
+        kotlinOptions.jvmTarget = "12"
     }
 
     test {
